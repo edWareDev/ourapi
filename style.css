@@ -18,10 +18,11 @@ html {
 }
 
 body {
-    width: 50%;
-    max-width: 650px;
+    /* width: 50%; */
+    width: 650px;
     /* height: 90vh; */
     background-color: white;
+    box-shadow: 0px 0px 10px 2px #0005;
 }
 
 header {
@@ -112,12 +113,123 @@ main .info .data {
     gap: 1rem;
 }
 
-main .info .data p {
-    font-size: 1.6rem;
-}
-
-
 main .info .data span {
-    font-size: 1.6rem;
     font-weight: 700;
 }
+
+main .info .data p {
+    font-size: 1.5rem;
+}
+
+main .info .qr {
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid black;
+}
+
+main .info .qr img {
+    width: 100%;
+    height: 100%;
+}
+
+main .info .estado {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: .5rem;
+}
+
+main .info .estado p {
+    font-size: 1.2rem;
+}
+
+main .info .estado p:nth-child(1) {
+    background-color: green;
+    padding: .2rem .5rem;
+    border-radius: .5rem;
+    font-weight: 700;
+    color: white;
+}
+
+main .info .estado p:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+main .info .estado p:nth-child(3) {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+main .facturacion {
+    /* background-color: red; */
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+main .facturacion p {
+    font-size: 1.4rem;
+}
+
+main .facturacion p:nth-child(1) {
+    font-weight: 600;
+}
+
+footer {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0 2rem;
+}
+
+footer .row {
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: .4rem 0;
+    border-bottom: 1px solid #0008;
+}
+
+footer .row div:nth-child(1) {
+    /* background-color: blue; */
+    width: 5%;
+}
+
+footer .row div:nth-child(2) {
+    /* background-color: blue; */
+    width: 45%;
+}
+
+footer .row div:nth-child(3) {
+    /* background-color: blue; */
+    width: 20%;
+}
+
+footer .row div:nth-child(4) {
+    /* background-color: blue; */
+    width: 15%;
+}
+
+footer .row div:nth-child(5) {
+    /* background-color: blue; */
+    width: 15%;
+}
+
+footer .heading {
+    font-weight: 700;
+    border-bottom: none;
+}
+
