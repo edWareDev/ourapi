@@ -55,7 +55,7 @@ header .midSection {
 header .midSection .logoContainer {
     width: 8rem;
     height: 8rem;
-    /* background-color: green; */
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,8 +64,8 @@ header .midSection .logoContainer {
 }
 
 header .midSection .logoContainer img {
-    width: 90%;
-    height: 90%;
+    width: 60%;
+    height: 60%;
 }
 
 header .midSection .infoProv {
