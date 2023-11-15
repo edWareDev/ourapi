@@ -15,6 +15,26 @@ html {
     align-items: center;
     width: 100vw;
     height: 100vh;
+
+
+}
+
+@media only screen and (max-width: 55em) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 45em) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 36em) {
+    html {
+        font-size: 7px;
+    }
 }
 
 body {
