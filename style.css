@@ -119,18 +119,31 @@ main .info .data span {
 }
 
 main .info .data p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 main .info .qr {
     width: 10rem;
-    height: 10rem;
+    height: 12rem;
     border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: .2rem;
 }
 
 main .info .qr img {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+main .info .qr p {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 main .info .estado {
@@ -234,4 +247,3 @@ footer .heading {
     font-weight: 700;
     border-bottom: none;
 }
-
