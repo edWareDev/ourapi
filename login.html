@@ -61,6 +61,10 @@
 							</div>
 						</div>
 					</form>
+					<p>
+						<a id="message" style="display: none;" href="#">Las credenciales ingresadas son incorrectas.
+						</a>
+					</p>
 				</section>
 			</div>
 		</div>
@@ -76,15 +80,14 @@
 
 	<script>
 		const formulary = document.querySelector('form')
+		const message = document.querySelector('#message')
 		formulary.addEventListener('submit', (e) => {
 			e.preventDefault()
-			console.log('INICIAR SESIÓN')
-
+			message.style.display = 'contents'
 		})
 		const register = document.querySelector('form')
 		formulary.addEventListener('reset', (e) => {
 			e.preventDefault()
-			console.log('RESETEANDO FORMULARIO')
 			location.href = './register.html'
 		})
 	</script>
