@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+	<title>OurApi - Registrarse</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1 id="logo"><a href="./">OUR API</a></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="./#one">Nosotros</a></li>
+					<li>
+						<a href="#">Planes</a>
+						<ul>
+							<li><a href="./api-nivel-1.html">API Nivel 1</a></li>
+							<li><a href="./api-nivel-2.html">API Nivel 2</a></li>
+							<li><a href="./api-nivel-3.html">API Nivel 3</a></li>
+						</ul>
+					</li>
+					<li><a href="./faq.html">FAQ</a></li>
+					<li><a href="./login.html" class="button primary">Iniciar Sesión</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main" class="wrapper style1">
+			<div class="container">
+				<header class="major">
+					<h2>Registrarse</h2>
+				</header>
+				<!-- Form -->
+				<section>
+					<form method="post" action="#">
+						<div class="row gtr-uniform gtr-50">
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="name" id="name" value="" placeholder="Nombres" />
+							</div>
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="last_name" id="last_name" value="" placeholder="Apellidos" />
+							</div>
+							<div class="col-6 col-12-xsmall">
+								<input type="email" name="email" id="email" value="" placeholder="Correo Electrónico" />
+							</div>
+							<div class="col-6 col-12-xsmall">
+								<input type="password" name="password" id="password" value=""
+									placeholder="Contraseña" />
+							</div>
+							<div class="col-6 col-12-medium">
+								<input type="checkbox" id="human" name="human" checked>
+								<label for="human">I am a human and not a robot</label>
+							</div>
+							<div class="col-12">
+								<ul class="actions">
+									<li><input type="submit" value="Registrarse" class="primary" /></li>
+									<li><input type="reset" value="Limpiar" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+					<p>
+						<a id="message" style="display: none;" href="#">Se han detectado muchos registros desde su IP.
+							Intente nuevamente en las
+							proximas 24
+							horas.
+						</a>
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="copyright">
+				<li>&copy; OURAPI. Todos los derechos reservados.</li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<script>
+		const formulary = document.querySelector('form')
+		const message = document.querySelector('#message')
+		formulary.addEventListener('submit', (e) => {
+			e.preventDefault()
+			const ntry = localStorage.getItem('n')
+			if (ntry && ntry > 1) {
+				message.style.display = 'contents'
+			} else {
+				localStorage.setItem('n', 2)
+			}
+		})
+		formulary.addEventListener('reset', (e) => {
+			const message = document.querySelector('#message')
+			message.style.display = 'none'
+		})
+
+	</script>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
