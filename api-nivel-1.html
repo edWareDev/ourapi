@@ -78,6 +78,19 @@
 								<li>Apellidos.</li>
 								<li>Código de Verificación.</li>
 							</ul>
+<pre>
+{
+	"status": 200,
+	"message": "Exito",
+	"data": {
+		"numero": "27427864",
+		"nombres": "JOSE PEDRO",
+		"apellido_paterno": "CASTILLO",
+		"apellido_materno": "TERRONES",
+		"cod_ver": "5"
+	}
+}
+</pre>
 							<h3>RUC Básico</h3>
 							<p>
 								Un servicio eficiente y confiable para empresas que buscan obtener información esencial
@@ -92,6 +105,25 @@
 								<li>Tipo.</li>
 								<li>Ubigeo.</li>
 							</ul>
+<pre>
+{
+	"status": 200,
+	"message": "Exito",
+	"data": {
+		"numero": "20131312955",
+		"nombre_o_razon_social": "SUPERINTENDENCIA NACIONAL DE ADUANAS Y DE ADMINISTRACION TRIBUTARIA",
+		"tipo_contribuyente": "INSTITUCIONES PUBLICAS",
+		"estado": "ACTIVO",
+		"condicion": "HABIDO",
+		"direccion_completa": "AV. GARCILASO DE LA VEGA NRO. 1472, LIMA - LIMA - LIMA",
+		"ubigeo": [
+			"15",
+			"1501",
+			"150101"
+		]
+	}
+}
+</pre>
 							<h3>Tipo de Cambio</h3>
 							<p>
 								Ofrecemos un servicio confiable y eficiente para empresas que necesitan información
@@ -100,9 +132,45 @@
 							</p>
 							<ul>
 								<li>Por Día</li>
-								<li>Por Mes</li>
-								<li>Rango Personalizado</li>
 							</ul>
+<pre>
+{
+	"status": 200,
+	"message": "Exito",
+	"data": {
+		"fecha": "2023-01-24",
+		"compra": 3.866,
+		"venta": 3.873
+	}
+}
+</pre>
+							<h3>Validez de Comprobante</h3>
+							<p>
+								Un servicio eficiente y confiable para empresas que buscan validar el estado de los comprobantes. Con nuestro servicio, las empresas pueden acceder a la
+								información necesaria de manera rápida y segura.
+							</p>
+							<ul>
+								<li>Código de estado de comprobante.</li>
+								<li>Descripción de estado de comprobante.</li>
+								<li>Código de estado de empresa.</li>
+								<li>Descripción de estado de empresa.</li>
+								<li>Código de condición de empresa.</li>
+								<li>Descripción de condición de empresa.</li>
+							</ul>
+<pre>
+{
+	"status": 200,
+	"message": "Exito",
+	"data": {
+		"comprobante_estado_codigo": "1",
+		"comprobante_estado_descripcion": "ACEPTADO",
+		"empresa_estado_codigo": "00",
+		"empresa_estado_description": "ACTIVO",
+		"empresa_condicion_codigo": "00",
+		"empresa_condicion_descripcion": "HABIDO"
+	}
+}
+</pre>
 						</section>
 
 					</div>
